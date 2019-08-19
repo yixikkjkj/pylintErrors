@@ -43,17 +43,9 @@ if constant_val:
     print(constant_val)
 
 
-# mixed-indentation
-def mix_tab_and_space():
-	space_line = 0
-	tab_line = 1
-	print(space_line, tab_line)
-
-
 def after_plan_setted():
-    from bson import ObjectId
-    user_id = ObjectId()
-    plan_id = ObjectId()
+    user_id = 'abc'
+    plan_id = 'abc'
     now = datetime.now()
     message = 'this message is used to show the logger argument length.'
     args = {
@@ -76,12 +68,6 @@ except Exception as exce:
     print(exce)
 
 print(exce)
-
-def is_midnight():
-    if not time():
-        return True
-    return False
-
 
 class classname:
     def __init__(self, args):

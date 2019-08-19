@@ -22,7 +22,7 @@ General options
   Add files or directories to the blacklist. They should be base names, not
   paths.
 
-  Default: ``core.py``
+  Default: ``CVS``
 :ignore-patterns:
   Add files or directories matching the regex patterns to the blacklist. The
   regex matches against base names, not paths.
@@ -105,7 +105,7 @@ Messages control options
   no Warning level messages displayed, use "--disable=all --enable=classes
   --disable=W".
 
-  Default: ``invalid-name,missing-docstring,print-statement,parameter-unpacking,unpacking-in-except,old-raise-syntax,backtick,long-suffix,old-ne-operator,old-octal-literal,import-star-module-level,non-ascii-bytes-literal,raw-checker-failed,bad-inline-option,locally-disabled,file-ignored,suppressed-message,useless-suppression,deprecated-pragma,use-symbolic-message-instead,too-few-public-methods,apply-builtin,basestring-builtin,buffer-builtin,cmp-builtin,coerce-builtin,execfile-builtin,file-builtin,long-builtin,raw_input-builtin,reduce-builtin,standarderror-builtin,unicode-builtin,xrange-builtin,coerce-method,delslice-method,getslice-method,setslice-method,no-absolute-import,old-division,dict-iter-method,dict-view-method,next-method-called,metaclass-assignment,indexing-exception,raising-string,reload-builtin,oct-method,hex-method,nonzero-method,cmp-method,input-builtin,round-builtin,intern-builtin,unichr-builtin,map-builtin-not-iterating,zip-builtin-not-iterating,range-builtin-not-iterating,filter-builtin-not-iterating,using-cmp-argument,eq-without-hash,div-method,idiv-method,rdiv-method,exception-message-attribute,invalid-str-codec,sys-max-int,bad-python3-import,deprecated-string-function,deprecated-str-translate-call,deprecated-itertools-function,deprecated-types-field,next-method-defined,dict-items-not-iterating,dict-keys-not-iterating,dict-values-not-iterating,deprecated-operator-function,deprecated-urllib-function,xreadlines-attribute,deprecated-sys-function,exception-escape,comprehension-escape``
+  Default: ``print-statement,parameter-unpacking,unpacking-in-except,old-raise-syntax,backtick,long-suffix,old-ne-operator,old-octal-literal,import-star-module-level,non-ascii-bytes-literal,raw-checker-failed,bad-inline-option,locally-disabled,file-ignored,suppressed-message,useless-suppression,deprecated-pragma,use-symbolic-message-instead,apply-builtin,basestring-builtin,buffer-builtin,cmp-builtin,coerce-builtin,execfile-builtin,file-builtin,long-builtin,raw_input-builtin,reduce-builtin,standarderror-builtin,unicode-builtin,xrange-builtin,coerce-method,delslice-method,getslice-method,setslice-method,no-absolute-import,old-division,dict-iter-method,dict-view-method,next-method-called,metaclass-assignment,indexing-exception,raising-string,reload-builtin,oct-method,hex-method,nonzero-method,cmp-method,input-builtin,round-builtin,intern-builtin,unichr-builtin,map-builtin-not-iterating,zip-builtin-not-iterating,range-builtin-not-iterating,filter-builtin-not-iterating,using-cmp-argument,eq-without-hash,div-method,idiv-method,rdiv-method,exception-message-attribute,invalid-str-codec,sys-max-int,bad-python3-import,deprecated-string-function,deprecated-str-translate-call,deprecated-itertools-function,deprecated-types-field,next-method-defined,dict-items-not-iterating,dict-keys-not-iterating,dict-values-not-iterating,deprecated-operator-function,deprecated-urllib-function,xreadlines-attribute,deprecated-sys-function,exception-escape,comprehension-escape``
 
 Reports options
 ~~~~~~~~~~~~~~~
@@ -684,7 +684,7 @@ Format checker Options
 :max-line-length:
   Maximum number of characters on a single line.
 
-  Default: ``120``
+  Default: ``100``
 :ignore-long-lines:
   Regexp for a line that is allowed to be longer than the limit.
 
@@ -956,7 +956,7 @@ Python3 checker Messages
   Used when the deprecated "<>" operator is used instead of "!=". This is
   removed in Python 3. This message can't be emitted when using Python >= 3.0.
 :backtick (E1605): *Use of the `` operator*
-  Used when the deprecated   "``" (backtick) operator is used instead of the str()
+  Used when the deprecated "``" (backtick) operator is used instead of the str()
   function.
 :old-raise-syntax (E1604): *Use raise ErrorClass(args) instead of raise ErrorClass, args.*
   Used when the alternate raise syntax 'raise foo, bar' is used instead of
@@ -1353,6 +1353,8 @@ String checker Options
   This flag controls whether the implicit-str-concat-in-sequence should
   generate a warning on implicit string concatenation in sequences defined over
   several lines.
+
+  Default: ``yes``
 
 String checker Messages
 ^^^^^^^^^^^^^^^^^^^^^^^

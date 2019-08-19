@@ -1,0 +1,7 @@
+[MESSAGES CONTROL]
+disable=all
+enable=invalid-name,
+       empty-docstring,
+       blacklisted-name,
+       mixed-indentation,
+       boolean-datetime,
