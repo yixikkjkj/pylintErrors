@@ -1,3 +1,6 @@
 {
-	"python.pythonPath": "/home/wyjnext/.pyenv/versions/linterr/bin/python"
+	"python.pythonPath": "/Users/wangyijun/.pyenv/versions/linterr34/bin/python",
+	"python.linting.flake8Enabled": false,
+	"python.linting.pylintEnabled": true,
+	"python.linting.enabled": true
 }

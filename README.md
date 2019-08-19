@@ -28,5 +28,15 @@ python3 的移植信息
 ## 一些比较常见的错误和解决办法
 
 ## 在 python2 升级 python3 中的一些错误
+using-cmp-argument
+python 2 和 3 的 sort/sorted 方法参数不一样
+
+old-division
+python 3 整数除法会返回浮点数了
 
 ## 自定义的 pylint 配置和代码风格
+
+## 一些冷门的问题
+
+old-ne-operator (E1607): *Use of the <> operator*
+boolean-datetime (W1502): *Using datetime.time in a boolean context.*
