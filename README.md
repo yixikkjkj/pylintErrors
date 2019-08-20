@@ -126,6 +126,9 @@ python 2 和 3 的 sort/sorted 方法参数不一样
 old-division
 python 3 整数除法会返回浮点数了
 
+dict-items-not-iterating (W1654)
+python 2 和 3 的 items 返回的结果是不一样的
+
 ## 自定义的 pylint 配置和代码风格
 
 ## 一些有趣的问题

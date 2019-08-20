@@ -1,3 +1,7 @@
+# import-message
+from datetime import time
+from . import test as test
+
 # invalid-name
 import logging
 

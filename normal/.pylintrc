@@ -5,3 +5,5 @@ enable=invalid-name,
        blacklisted-name,
        mixed-indentation,
        boolean-datetime,
+       useless-import-alias,
+       wrong-import-order
