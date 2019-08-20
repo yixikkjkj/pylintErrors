@@ -1,2 +1,20 @@
+[MASTER]
+jobs=0
+persistent=no
+
 [MESSAGE CONTROL]
-enable=try-except-raise
+disable=missing-docstring,
+        
+
+[REPORTS]
+reports=yes
+score=yes
+
+[BASIC]
+const-naming-style=snake_case
+class-attribute-naming-style=UPPER_CASE
+
+[FORMAT]
+max-line-length=120
+
+

@@ -39,6 +39,7 @@ blacklisted-name (C0102)
 
 1. 类名使用 PascalCase
 2. 参数，局部变量，方法名，类方法名，模块名使用 snake_case，这个 snake_case 是有一个 3-30 的长度限制的
+3. 常量需要使用 UPPER_CASE
 
 pylint 配置中有两个列表
 good-names
